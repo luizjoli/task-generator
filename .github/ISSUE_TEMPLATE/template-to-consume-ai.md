@@ -1,10 +1,20 @@
----
-name: Template to consume AI
-about: It's an issue to search a term in AI
-title: "[Feat] Put some text to search in AI"
-labels: ''
-assignees: luizjoli
-
----
-
-Something to search
+name: Search Form
+description: File a bug report.
+title: "[Feature]: "
+labels: ["feat", "ai"]
+projects: ["luizjoli/task-generator"]
+assignees:
+  - luizjoli
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for use this template issue, hope to help you with something!
+  - type: input
+    id: text_search
+    attributes:
+      label: Term to Search
+      description: Put your text term here to search?
+      placeholder: ex. my cluster
+    validations:
+      required: yes
